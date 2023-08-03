@@ -1,0 +1,26 @@
+
+运行命令：
+
+conda activate freemocap-env
+
+freemocap
+
+安装命令：
+
+conda create -n freemocap-env python=3.10
+
+conda activate freemocap-env
+
+git clone https://github.com/freemocap/freemocap
+
+cd freemocap
+
+pip install -e .
+
+conda activate freemocap-env
+
+C:\Users\LEO\freemocap_data\logs_info_and_settings\most_recent_recording.tom
+
+
+
+

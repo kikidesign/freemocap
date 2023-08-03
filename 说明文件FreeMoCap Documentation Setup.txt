@@ -1,0 +1,46 @@
+Lighting Conditions¶
+Lighting is crucial for a camera-based system like FreeMoCap. For best results, use bright environments, such as near open windows during the day. Be cautious, as environments that appear bright to our eyes may be quite dim (Human eyes are exceptionally good at adapting to different lighting conditions).
+
+On a technical level, we want enough light in our scene that we can set our camera's Exposure times to be as short as possible.
+
+A short exposure time means that the camera's (digital) shutter will be open for a shorter time on each recorded frame. That means that your subject will have less time to move during the exposure, which will reduce motion blur and make it easier to identify the subject's joints in each frame.
+
+When setting the exposure on the GUI, aim for a setting of at most -6, but better results can be achieved at -7 or -8 or lower. For information on how these number map onto actual time measurements, see this article.
+
+Background Considerations¶
+A solid-colored backdrop is not strictly necessary, but using one can improve the quality of recordings. Covering complex visual textures in the camera's field of view makes tracking the human in the scene easier, leading to better outcomes. Start with a simple setup first, and add complexity once you've established that the simple version works.
+
+Similarly, it is better for subjects to wear tight-fitting clothes that expose joints like elbows and knees. While not strictly necessary, it will lead to better quality recordings. Consider the machine's perspective: if the subject is wearing baggy pants and the software is asked to identify the knee, it will struggle. It may produce an estimate close to the correct position, but tracking the knee will be easier if it is visible or if the subject is wearing tight-fitting pants.
+
+Camera Placement and Configuration¶
+Camera placement is critical. Ensure that the subject is in full view of each camera. In multi-camera setups, ensure that at least two, preferably three, cameras can see every part of the subject's body at any given time. Cameras can be rotated 90° to portrait mode to capture a standing human in a tighter space.
+
+Ideally, the person should occupy as much of the camera screen as possible, providing more information for the software to track the person. Most testing has been done on low-quality webcams, with some tests on GoPros. A separate how-to guide can be created to handle asynchronous recordings from devices like GoPros.
+
+In multi-camera situations, separate the cameras enough to provide different points of view on the subject. If multiple cameras are positioned too close together, they won't add much information to the scene. Separating them by a sufficient angle improves triangulation.
+
+High-quality recordings can be ensured by adjusting camera settings for optimal image results, mainly by setting the appropriate exposure for the lighting conditions and having good lighting. A successful calibration is also necessary, which will be covered in a separate how-to guide..
+
+
+照明条件
+光线对于像FreeMoCap这样基于摄像头的系统至关重要。为了获得最佳效果，请使用明亮的环境，例如白天靠近敞开的窗户。一定要谨慎，因为在我们眼中看起来明亮的环境可能非常昏暗（人眼非常善于适应不同的光照条件）。
+
+在技术层面上，我们希望场景中有足够的光线，以便将相机的曝光时间设置得越短越好。
+
+曝光时间短意味着相机（数码）快门在每个记录画面上打开的时间较短。这意味着被摄体在曝光期间移动的时间较短，从而减少运动模糊，并更容易在每一帧中识别被摄体的关节。
+
+在图形用户界面上设置曝光时，最多将曝光值设置为-6，但在-7或-8或更低的曝光值下可以获得更好的效果。有关这些数字如何映射到实际时间测量的信息，请参阅本文。
+
+背景考虑因素
+纯色背景并非绝对必要，但使用纯色背景可提高录音质量。在摄像机视场中覆盖复杂的视觉纹理可更容易地跟踪场景中的人物，从而获得更好的效果。首先从简单的设置开始，在确定简单设置有效后再增加复杂设置。
+
+同样，受试者最好穿着暴露肘部和膝盖等关节的紧身衣物。虽然并非绝对必要，但这将提高记录质量。从机器的角度考虑：如果受试者穿着宽松的裤子，而软件被要求识别膝盖，那么它将会很费力。它可能会产生一个接近正确位置的估计值，但如果膝盖清晰可见或被测者穿着紧身裤，则跟踪膝盖会更容易。
+
+相机位置和配置
+摄像机的位置至关重要。确保被摄体处于每台摄像机的全视角内。在多台摄像机设置中，确保至少两台，最好是三台摄像机在任何时间都能看到被摄体的每个部位。可将摄像机旋转90°至人像模式，以便在更狭窄的空间内拍摄站立的人。
+
+理想情况下，人物应占据摄像机屏幕尽可能多的位置，从而为软件提供更多信息来追踪人物。大多数测试都是在低质量网络摄像头上进行的，也有一些测试是在GoPros上进行的。可以创建单独的操作指南来处理GoPros等设备的异步录制。
+
+在使用多台摄像机的情况下，应充分分开摄像机，以便为拍摄对象提供不同的视角。如果多台摄像机靠得太近，则不会为场景增加太多信息。将它们分开足够的角度可提高三角测量能力。
+
+为获得最佳图像效果，可通过调整摄像机设置来确保高质量的记录，主要是根据照明条件设置适当的曝光和良好的照明。成功的校准也是必要的，这将在单独的操作指南中介绍。
